@@ -24,7 +24,7 @@
                         <p>Hoşgeldin {{user.username}}</p>
                         <p><a href="{% url 'logout' %}">Log out</a></p>
                     {% else %}
-                        <p>Giriş yapamadınız!</p>
+                        <p>Giriş yapmadınız!</p>
                         <a href="{% url 'login' %}"> Log in </a>
                         <p><a href="{% url 'signup' %}">Sign up</a></p>
                     {% endif %}
