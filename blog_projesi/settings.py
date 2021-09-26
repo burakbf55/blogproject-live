@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-o48#r-ha-b4-=p03&59^2x=x+vis(ry$klx4+vcxwuad0c49i%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['blogdjango-project.herokuapp.com', '127.0.0.1']
 
@@ -121,6 +121,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles') 
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
